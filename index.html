@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="jumbotron">
+      <h1>Input Types</h1>
+    </div>  
+  </header>
+
+<section>
+<form name="inputForm" id="inputForm" method="get">  
+  <table>
+  <tr>
+    <th>Input Type</th>
+    <th>Control</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Text</td>
+    <td>
+      <input type="text" name="textInput" id="textInput" value="Cat">
+    </td>
+    <td><div id="textOutput"></div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Password</td>
+    <td>
+      <input type="password" name="passwordInput" id="passwordInput" value="knowledgeispower">
+    </td>
+    <td><div id="passwordOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Radio</td>
+    <td>
+      <input type="radio" name="radioInput" id="radioInput" value="Cat">Cat
+      <input type="radio" name="radioInput" id="radioInput" value="Dog">Dog
+      <input type="radio" name="radioInput" id="radioInput" value="Llama" checked>Llama
+    </td>
+    <td><div id="radioOutput"></div>
+    </td>
+  </tr>
+  
+    <tr>
+    <td>Select</td>
+    <td>
+      <select name="selectInput" id="selectInput" size ="4" single>
+        <option id="selectInput" value="taco">Taco</option>
+        <option id="selectInput" value="burrito">Burrito</option>
+        <option id="selectInput" value="nachos" selected>Nachos</option>
+        <option id="selectInput" value="quesadilla">Quesadilla</option>
+      </select>     
+    </td>
+    <td><div id="selectOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Color</td>
+    <td>
+      <input type="color" name="colorInput" id="colorInput" value="#e20074">
+    </td>
+    <td><div id="colorOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Date</td>
+    <td>
+        <input type="date" name="dateInput" id="dateInput" value="2000-01-01">
+    </td>
+    <td><div id="dateOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Local Time</td>
+    <td>
+        <input type="time" name="timeInput" id="timeInput" value="23:59">
+    </td>
+    <td><div id="timeOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Email</td>
+    <td>
+        <input type="email" name="emailInput" id="emailInput" value="no@no.com">
+    </td>
+    <td><div id="emailOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Month</td>
+    <td>
+      <input type="month" name="monthInput" id="monthInput" value="2000-01">
+    </td>
+    <td><div id="monthOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Number</td>
+    <td>
+        <input type="number" name="numberInput" id="numberInput" step="any" value="3">
+    </td>
+    <td><div id="numberOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Range</td>
+    <td>
+        1<input type="range" name="rangeInput" id="rangeInput" min="1" max="9" value="5">9
+    </td>
+    <td><div id="rangeOuput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Search</td>
+    <td>
+        <input type="search" name="searchInput" id="searchInput" value="Let Me Google That For You">
+    </td>
+    <td><div id="searchOuput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Telephone</td>
+    <td>
+        <input type="tel" name="telInput" id="telInput" value="206-867-5309">
+    </td>
+    <td><div id="telOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>URL</td>
+    <td>
+        <input type="url" name="urlInput" id="urlInput" value="http://www.google.com">
+    </td>
+    <td><div id="urlOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Week</td>
+    <td>
+        <input type="week" name="weekInput" id="weekInput" value="2016-W52">
+    </td>
+    <td><div id="weekOutput"></div>
+    </td>
+  </tr>
+  
+    <tr>
+    <td>Checkbox</td>
+    <td>
+        <input type="checkbox" name="checkInput" id="checkInput" value="true">I love tacos
+    </td>
+    <td><div id="checkOutput"></div>
+    </td>
+  </tr>
+  
+ 
+  </table>
+    </form>  
+  </section>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
