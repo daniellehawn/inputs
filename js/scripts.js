@@ -13,7 +13,7 @@ function someInputs () {
   $('#urlOutput').text($('#urlInput').val());
   $('#weekOutput').text($('#weekInput').val());
   $('#radioOutput').text($('#radioInput:checked').val());
-  $('#selectOutput').text($('#selectInput:checked').val()); 
+  $('#selectOutput').text($('#selectInput').val());
   $('#checkOutput').text($('#checkInput').prop('checked'));
   $('#datetimeOutput').text($('#datetimeInput').val());
 
