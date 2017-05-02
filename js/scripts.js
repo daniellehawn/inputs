@@ -7,8 +7,8 @@ function someInputs () {
   $('#emailOutput').text($('#emailInput').val());
   $('#monthOutput').text($('#monthInput').val());
   $('#numberOutput').text($('#numberInput').val());
-  $('#rangeOuput').text($('#rangeInput').val());
-  $('#searchOuput').text($('#searchInput').val());
+  $('#rangeOutput').text($('#rangeInput').val());
+  $('#searchOutput').text($('#searchInput').val());
   $('#telOutput').text($('#telInput').val());
   $('#urlOutput').text($('#urlInput').val());
   $('#weekOutput').text($('#weekInput').val());
