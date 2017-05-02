@@ -47,10 +47,10 @@
     
   <tr>
     <td>Radio</td>
-    <td>
-      <input class="form-check" type="radio" name="radioInput" id="radioInput" value="Cat">Cat
-      <input class="form-check" type="radio" name="radioInput" id="radioInput" value="Dog">Dog
-      <input class="form-check" type="radio" name="radioInput" id="radioInput" value="Llama" checked>Llama
+    <td>  
+      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Cat">Cat</div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Dog">Dog</div>
+      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Llama" checked>Llama</div>
     </td>
     <td><div id="radioOutput"></div>
     </td>
@@ -96,13 +96,22 @@
     <td><div id="timeOutput"></div>
     </td>
   </tr>
+  
+  <tr>
+    <td>Date/Time Local</td>
+    <td>
+      <input class="form-control" type="datetime-local" name="datetimeInput" id="datetimeInput" value="2017-05-02T12:00">
+    </td>
+    <td><div id="datetimeOutput"></div>
+    </td>   
+  </tr>
     
   <tr>
-    <td>Email</td>
+    <td>Week</td>
     <td>
-        <input class="form-control" type="email" name="emailInput" id="emailInput" value="no@no.com">
+        <input class="form-control" type="week" name="weekInput" id="weekInput" value="2016-W52">
     </td>
-    <td><div id="emailOutput"></div>
+    <td><div id="weekOutput"></div>
     </td>
   </tr>
     
@@ -112,6 +121,15 @@
       <input class="form-control" type="month" name="monthInput" id="monthInput" value="2000-01">
     </td>
     <td><div id="monthOutput"></div>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Email</td>
+    <td>
+        <input class="form-control" type="email" name="emailInput" id="emailInput" value="no@no.com">
+    </td>
+    <td><div id="emailOutput"></div>
     </td>
   </tr>
     
@@ -159,20 +177,11 @@
     <td><div id="urlOutput"></div>
     </td>
   </tr>
-    
-  <tr>
-    <td>Week</td>
-    <td>
-        <input class="form-control" type="week" name="weekInput" id="weekInput" value="2016-W52">
-    </td>
-    <td><div id="weekOutput"></div>
-    </td>
-  </tr>
   
     <tr>
     <td>Checkbox</td>
     <td>
-        <input class="form-check" type="checkbox" name="checkInput" id="checkInput" value="true">I love tacos
+        <input class="form-check-input" type="checkbox" name="checkInput" id="checkInput" value="true">I love tacos
     </td>
     <td><div id="checkOutput"></div>
     </td>
