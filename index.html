@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Input Types</title>
   </head>
 <body>
 
@@ -15,183 +16,184 @@
   <header>
       <h1>Input Types</h1>
   </header>
+  
+  <section>
+    <h2>Modify Each Input to see a New Result</h2>
+    <form name="inputForm" id="inputForm" method="get">
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Input Type</th>
+            <th>Control</th>
+            <th>Value</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Text</td>
+            <td>
+              <input class="form-control" type="text" name="textInput" id="textInput" value="Cat">
+            </td>
+            <td><div id="textOutput"></div>
+            </td>
+          </tr>
 
-<section>
-<form name="inputForm" id="inputForm" method="get">  
-  <table class="table">
-  <thead class="thead-inverse">
-  <tr>
-    <th>Input Type</th>
-    <th>Control</th>
-    <th>Value</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Text</td>
-    <td>
-      <input class="form-control" type="text" name="textInput" id="textInput" value="Cat">
-    </td>
-    <td><div id="textOutput"></div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Password</td>
-    <td>
-      <input class="form-control" type="password" name="passwordInput" id="passwordInput" value="knowledgeispower">
-    </td>
-    <td><div id="passwordOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Radio</td>
-    <td>  
-      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Cat">Cat</div>
-      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Dog">Dog</div>
-      <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Llama" checked>Llama</div>
-    </td>
-    <td><div id="radioOutput"></div>
-    </td>
-  </tr>
-  
-    <tr>
-    <td>Select</td>
-    <td>
-      <select class="form-control" name="selectInput" id="selectInput" size ="4" multiple>
-        <option id="selectInput" value="taco">Taco</option>
-        <option id="selectInput" value="burrito">Burrito</option>
-        <option id="selectInput" value="nachos" selected>Nachos</option>
-        <option id="selectInput" value="quesadilla">Quesadilla</option>
-      </select>     
-    </td>
-    <td><div id="selectOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Color</td>
-    <td>
-      <input class="form-control" type="color" name="colorInput" id="colorInput" value="#e20074">
-    </td>
-    <td><div id="colorOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Date</td>
-    <td>
-        <input class="form-control" type="date" name="dateInput" id="dateInput" value="2000-01-01">
-    </td>
-    <td><div id="dateOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Local Time</td>
-    <td>
-        <input class="form-control" type="time" name="timeInput" id="timeInput" value="23:59">
-    </td>
-    <td><div id="timeOutput"></div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Date/Time Local</td>
-    <td>
-      <input class="form-control" type="datetime-local" name="datetimeInput" id="datetimeInput" value="2017-05-02T12:00">
-    </td>
-    <td><div id="datetimeOutput"></div>
-    </td>   
-  </tr>
-    
-  <tr>
-    <td>Week</td>
-    <td>
-        <input class="form-control" type="week" name="weekInput" id="weekInput" value="2016-W52">
-    </td>
-    <td><div id="weekOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Month</td>
-    <td>
-      <input class="form-control" type="month" name="monthInput" id="monthInput" value="2000-01">
-    </td>
-    <td><div id="monthOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Email</td>
-    <td>
-        <input class="form-control" type="email" name="emailInput" id="emailInput" value="no@no.com">
-    </td>
-    <td><div id="emailOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Number</td>
-    <td>
-        <input class="form-control" type="number" name="numberInput" id="numberInput" step="any" value="3">
-    </td>
-    <td><div id="numberOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Range</td>
-    <td>
-        <input class="form-control" type="range" name="rangeInput" id="rangeInput" min="1" max="9" value="5">
-    </td>
-    <td><div id="rangeOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Search</td>
-    <td>
-        <input class="form-control" type="search" name="searchInput" id="searchInput" value="Let Me Google That For You">
-    </td>
-    <td><div id="searchOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>Telephone</td>
-    <td>
-        <input class="form-control" type="tel" name="telInput" id="telInput" value="206-867-5309">
-    </td>
-    <td><div id="telOutput"></div>
-    </td>
-  </tr>
-    
-  <tr>
-    <td>URL</td>
-    <td>
-        <input class="form-control" type="url" name="urlInput" id="urlInput" value="http://www.google.com">
-    </td>
-    <td><div id="urlOutput"></div>
-    </td>
-  </tr>
-  
-    <tr>
-    <td>Checkbox</td>
-    <td>
-        <input class="form-check-input" type="checkbox" name="checkInput" id="checkInput" value="true">I love tacos
-    </td>
-    <td><div id="checkOutput"></div>
-    </td>
-  </tr>
-  </tbody>
-  </table>
-    </form>  
+          <tr>
+            <td>Password</td>
+            <td>
+              <input class="form-control" type="password" name="passwordInput" id="passwordInput" value="knowledgeispower">
+            </td>
+            <td><div id="passwordOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Radio</td>
+            <td>  
+              <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Cat">Cat</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Dog">Dog</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="Llama" checked>Llama</div>
+            </td>
+            <td><div id="radioOutput"></div>
+            </td>
+          </tr>
+
+            <tr>
+            <td>Select</td>
+            <td>
+              <select class="form-control" name="selectInput" id="selectInput" size ="4" multiple>
+                <option id="selectInput" value="taco">Taco</option>
+                <option id="selectInput" value="burrito">Burrito</option>
+                <option id="selectInput" value="nachos" selected>Nachos</option>
+                <option id="selectInput" value="quesadilla">Quesadilla</option>
+              </select>     
+            </td>
+            <td><div id="selectOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Color</td>
+            <td>
+              <input class="form-control" type="color" name="colorInput" id="colorInput" value="#e20074">
+            </td>
+            <td><div id="colorOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Date</td>
+            <td>
+                <input class="form-control" type="date" name="dateInput" id="dateInput" value="2000-01-01">
+            </td>
+            <td><div id="dateOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Local Time</td>
+            <td>
+                <input class="form-control" type="time" name="timeInput" id="timeInput" value="23:59">
+            </td>
+            <td><div id="timeOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Date/Time Local</td>
+            <td>
+              <input class="form-control" type="datetime-local" name="datetimeInput" id="datetimeInput" value="2017-05-02T12:00">
+            </td>
+            <td><div id="datetimeOutput"></div>
+            </td>   
+          </tr>
+
+          <tr>
+            <td>Week</td>
+            <td>
+                <input class="form-control" type="week" name="weekInput" id="weekInput" value="2016-W52">
+            </td>
+            <td><div id="weekOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Month</td>
+            <td>
+              <input class="form-control" type="month" name="monthInput" id="monthInput" value="2000-01">
+            </td>
+            <td><div id="monthOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td>
+                <input class="form-control" type="email" name="emailInput" id="emailInput" value="no@no.com">
+            </td>
+            <td><div id="emailOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Number</td>
+            <td>
+                <input class="form-control" type="number" name="numberInput" id="numberInput" step="any" value="3">
+            </td>
+            <td><div id="numberOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Range</td>
+            <td>
+                <input class="form-control" type="range" name="rangeInput" id="rangeInput" min="1" max="9" value="5">
+            </td>
+            <td><div id="rangeOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Search</td>
+            <td>
+                <input class="form-control" type="search" name="searchInput" id="searchInput" value="Let Me Google That For You">
+            </td>
+            <td><div id="searchOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Telephone</td>
+            <td>
+                <input class="form-control" type="tel" name="telInput" id="telInput" value="206-867-5309">
+            </td>
+            <td><div id="telOutput"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>URL</td>
+            <td>
+                <input class="form-control" type="url" name="urlInput" id="urlInput" value="http://www.google.com">
+            </td>
+            <td><div id="urlOutput"></div>
+            </td>
+          </tr>
+
+            <tr>
+            <td>Checkbox</td>
+            <td>
+                <input class="form-check-input" type="checkbox" name="checkInput" id="checkInput" value="true">I love tacos
+            </td>
+            <td><div id="checkOutput"></div>
+            </td>
+          </tr>
+          </tbody>
+          </table>
+    </form>
   </section>
   </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-</body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
 </html>
